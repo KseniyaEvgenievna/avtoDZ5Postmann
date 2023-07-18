@@ -72,7 +72,7 @@ class AuthTest {
         //  "Пароль" - пользователя registeredUser
         $("[data-test-id='login'] input").setValue(wrongLogin);
         $("[data-test-id='password'] input").setValue(registeredUser.getPassword());
-        $("button.button").click();
+        $("button.button").click();https://github.com/KseniyaEvgenievna/avtoDZ5Postmann
         $("[data-test-id='error-notification'] .notification__content")
                 .shouldHave(Condition.exactText("Ошибка! Неверно указан логин или пароль"))
                 .shouldBe(Condition.visible);
